@@ -1,0 +1,11 @@
+api = "0.2"
+
+# Buildpack ID and metadata
+[buildpack]
+id = "jab/debug"
+version = "0.0.1"
+name = "Debug Buildpack"
+
+# Stacks that the buildpack will work with
+[[stacks]]
+id = "heroku-18"

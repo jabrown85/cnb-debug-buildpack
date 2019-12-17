@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+# Set the layersdir variable to be the first argument from the build lifecycle
+layersdir=$1
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+layerdir=$layersdir/debug-layer
+mkdir -p $layerdir
+echo "ls -l /"
+ls -l /
+echo "ls -l /workspace"
+ls -l /workspace
+
+exit 0
